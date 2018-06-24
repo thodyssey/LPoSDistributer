@@ -31,7 +31,7 @@ var config = {
 ```
 After a successful configuration of the tool, it could be started with:
 ```sh
-node app.js
+node appFastNG.js
 ```
 After the script is finished, the payments that should be distributed to the leasers are written to the file configured by the _config.filename_ setting in the configuration section.
 ## Doing the payments
@@ -56,7 +56,7 @@ node massPayment.js
 ## Why two seperate tools?
 We decided to use two seperate tools since this allows for additional tests of the payments before the payments are actually executed. On the other hand, it does not provide any drawback since both scripts could also be called directly one after the other with:
 ```sh
-node apps.js && node massPayment.js
+node appsFastNG.js && node massPayment.js
 ```
 We strongly recommend to check the payments file before the actual payments are done. In order to foster these checks, we added the _checkPaymentsFile.js_ tool that could need to be configured as follows:
 ```sh
