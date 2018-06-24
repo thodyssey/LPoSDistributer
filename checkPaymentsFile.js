@@ -4,11 +4,11 @@ var request = require('request');
 /**
  * Put your settings here:
  *     - filename: file to check for payments
- *     - node: address of your node in the form http://<ip>:<port
+ *     - node: address of your node in the form http://<ip>:<port>
  */
 var config = {
     filename: 'test.json',
-    node: 'http://5.189.136.6:6869'
+    node: 'http://localhost:5555'
 };
 
 var payments;
@@ -36,16 +36,16 @@ var start = function() {
                 assets[payment.assetId].amount += payment.amount;
             }
         } else {
-            if (!assets['Waves']) {
+            if (!assets['LUNES']) { //Waves
                 assetsFound++;
-                assets['Waves'] = {
+                assets['LUNES'] = {
                     amount: payment.amount,
                     decimals: 8,
-                    name: 'Waves'
+                    name: 'LUNES'
                 };
 
             } else {
-                assets['Waves'].amount += payment.amount;
+                assets['LUNES'].amount += payment.amount;
             }
         }
     });
@@ -68,7 +68,7 @@ var addAssetInfo = function(assets, cb) {
     var counter = 0;
 
     for (var assetId in assets) {
-        if (assetId !== 'Waves') {
+        if (assetId !== 'LUNES') {
             request.get(config.node + '/transactions/info/' + assetId, function(err, response, body) {
                 if (!err) {
                     var asset = JSON.parse(body);
