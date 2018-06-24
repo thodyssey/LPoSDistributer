@@ -4,25 +4,25 @@ var LineReaderSync = require("line-reader-sync")
 var fs = require('fs');
 
 /**
- * Put your settings here:
+ * Put your settings here: FOR LUNES not set  MRT yet
  *     - address: the address of your node that you want to distribute from
  *     - alias: the alias of the node address
  *     - startBlockHeight: the block from which you want to start distribution for
  *     - endBlock: the block until you want to distribute the earnings
  *     - distributableMRTPerBlock: amount of MRT distributed per forged block
  *     - filename: file to which the payments for the mass payment tool are written
- *     - node: address of your node in the form http://<ip>:<port
+ *     - node: address of your node in the form http://<ip>:<port>
  *     - percentageOfFeesToDistribute: the percentage of Waves fees that you want to distribute
  *     - blockStorage: file for storing block history
  */
 var config = {
-    address: '',
-    alias: '',
-    startBlockHeight: 803133,
-    endBlock: 808388,
+    address: '37nX3hdCt1GWeSsAMNFmWgbQWZZhbvBG3mX',
+    alias: 'lunesfullnode.com',
+    startBlockHeight: 0,
+    endBlock: 28606,
     distributableWfnPerBlock: 0,
     filename: 'test.json',
-    node: 'http://<ip>:6869',
+    node: 'http://localhost:5555',
     percentageOfFeesToDistribute: 100,
     blockStorage: 'blocks.json'
 };
@@ -127,8 +127,8 @@ var prepareDataStructure = function(blocks) {
  * @returns {Array} all relevant blocks
  */
 var getAllBlocks = function() {
-    // leases have been resetted in block 462000, therefore, this is the first relevant block to be considered
-    var firstBlockWithLeases = 462000;
+    // firstBlockWithLeaes in Lunes = 0
+    var firstBlockWithLeases = 0;
     var currentStartBlock = firstBlockWithLeases;
     var blocks = [];
     var steps = 100;
