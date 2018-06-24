@@ -1,5 +1,5 @@
-# WavesLPoSDistributer
-A revenue distribution tool for Waves nodes
+# WavesLPoSDistributer (original from jansenmarc - MIT License - Copyright (c) 2017 jansenmarc)
+A revenue distribution tool for LUNES nodes, adapted by LunesCommunity
 
 ## Installation
 First of all, you need to install Node.js (https://nodejs.org/en/) and NPM. Afterwards the installation of the dependencies could be done via:
@@ -14,18 +14,18 @@ Once the dependencies are installed, the script that generates the payouts need 
         - address: the address of your node that you want to distribute from
         - startBlockHeight: the block from which you want to start distribution for
         - endBlock: the block until you want to distribute the earnings
-        - distributableMRTPerBlock: amount of MRT distributed per forged block
+        - distributableMRTPerBlock: amount of MRT distributed per forged block - In LUNES don't use yet
         - filename: file to which the payments for the mass payment tool are written
-        - node: address of your node in the form http://<ip>:<port
+        - node: address of your node in the form http://<ip>:<port>
         - percentageOfFeesToDistribute: the percentage of Waves fees that you want to distribute
  */
 var config = {
     address: '',
     startBlockHeight: 462000,
     endBlock: 465000,
-    distributableMrtPerBlock: 20,
+    distributableMrtPerBlock: 0,
     filename: 'test.json',
-    node: 'http://<ip>:6869',
+    node: 'http://<ip>:5555',
     percentageOfFeesToDistribute: 100
 }
 ```
@@ -117,7 +117,7 @@ Configuration is done via the configuration section:
         privateKey: the private key of the address you want to distribute from
         file: the calculated payout file
         timeout: timeout between requests send to nodes in ms
-        assetId: the id of the asset you want to distribute, '' for Waves
+        assetId: the id of the asset you want to distribute, '' for LUNES
         nodes: a list of nodes to which the signed transactions should be send to, in the format: http://host:port
 '''
 config = {
