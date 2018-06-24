@@ -127,8 +127,8 @@ var prepareDataStructure = function(blocks) {
  * @returns {Array} all relevant blocks
  */
 var getAllBlocks = function() {
-    // firstBlockWithLeaes in Lunes = 0
-    var firstBlockWithLeases = 0;
+    // firstBlockWithLeaes in Lunes = 10000
+    var firstBlockWithLeases = 10000;
     var currentStartBlock = firstBlockWithLeases;
     var blocks = [];
     var steps = 100;
@@ -203,7 +203,7 @@ var getAllBlocks = function() {
 var distribute = function(activeLeases, amountTotalLeased, block, previousBlock) {
     var fee;
 
-    if (block.height >= 805000) {
+    if (block.height >= 10000) {
         fee = block.wavesFees * 0.4 + block.previousBlockWavesFees * 0.6;
     } else {
         fee = block.wavesFees
