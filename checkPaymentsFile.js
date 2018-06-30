@@ -8,7 +8,7 @@ var request = require('request');
  */
 var config = {
     filename: 'test.json',
-    node: 'http://localhost:5555'
+    node: 'http://35.237.3.125:5555'
 };
 
 var payments;
