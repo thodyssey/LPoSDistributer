@@ -16,13 +16,13 @@ var fs = require('fs');
  *     - blockStorage: file for storing block history
  */
 var config = {
-    address: '37nX3hdCt1GWeSsAMNFmWgbQWZZhbvBG3mX',
-    alias: 'lunesfullnode.com',
+    address: '381mRmqAVmePxDLL2SZGt4PrDtoFU5GSgyw',
+    alias: 'odyx.me',
     startBlockHeight: 0,
-    endBlock: 28606,
+    endBlock: 36999,
     distributableWfnPerBlock: 0,
     filename: 'test.json',
-    node: 'http://localhost:5555',
+    node: 'http://35.237.3.125:5555',
     percentageOfFeesToDistribute: 100,
     blockStorage: 'blocks.json'
 };
