@@ -19,7 +19,7 @@ var config = {
     address: '381mRmqAVmePxDLL2SZGt4PrDtoFU5GSgyw',
     alias: 'odyx.me',
     startBlockHeight: 0,
-    endBlock: 36999,
+    endBlock: 38499,
     distributableWfnPerBlock: 0,
     filename: 'test.json',
     node: 'http://35.237.3.125:5555',
