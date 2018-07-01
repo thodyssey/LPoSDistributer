@@ -21,7 +21,7 @@ var config = {
     startBlockHeight: 0,
     endBlock: 38499,
     distributableWfnPerBlock: 0,
-    filename: 'test.json',
+    filename: 'pay.json',
     node: 'http://35.237.3.125:5555',
     percentageOfFeesToDistribute: 100,
     blockStorage: 'blocks.json'
