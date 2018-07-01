@@ -225,7 +225,7 @@ var pay = function() {
         		"amount": Number(Math.round(payments[address])),
                 "fee": 100000,
                 "sender": config.address,
-                "attachment": "",
+                /* "attachment": "", */
                 "recipient": address
             });
         }
@@ -235,7 +235,7 @@ var pay = function() {
                 "fee": 100000,
                 "assetId": "4uK8i4ThRGbehENwa6MxyLtxAjAo1Rj9fduborGExarC",
                 "sender": config.address,
-                "attachment": "",
+                /* "attachment": "", */
                 "recipient": address
             });
         }
