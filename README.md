@@ -1,4 +1,4 @@
-# WavesLPoSDistributer (original from jansenmarc - MIT License - Copyright (c) 2017 jansenmarc)
+# LUNESLPoSDistributer (original from jansenmarc - MIT License - Copyright (c) 2017 jansenmarc)
 A revenue distribution tool for LUNES nodes, adapted by LunesCommunity
 
 ## Installation
