@@ -111,7 +111,7 @@ var sendToRecipients = function(txList, index) {
         "fee": 100000,
         "assetId": config.assetToDistributeId,
         "sender": config.address,
-        "attachment": "",
+        /* "attachment": "", */
         "recipient": txList[index].address
     };
 
