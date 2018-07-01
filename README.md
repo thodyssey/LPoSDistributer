@@ -1,4 +1,4 @@
-# LUNESLPoSDistributer (original from jansenmarc - MIT License - Copyright (c) 2017 jansenmarc)
+# LUNES LPoS Distributer (original from Waves by jansenmarc - MIT License - Copyright (c) 2017 jansenmarc)
 A revenue distribution tool for LUNES nodes, adapted by LunesCommunity
 
 ## Installation
