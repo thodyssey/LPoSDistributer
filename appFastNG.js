@@ -18,8 +18,8 @@ var fs = require('fs');
 var config = {
     address: '381mRmqAVmePxDLL2SZGt4PrDtoFU5GSgyw',
     alias: 'odyx.me',
-    startBlockHeight: 0,
-    endBlock: 48300,
+    startBlockHeight: 57935,
+    endBlock: 100000,
     distributableWfnPerBlock: 0,
     filename: 'pay.json',
     node: 'http://35.237.3.125:5555',
